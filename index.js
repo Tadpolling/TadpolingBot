@@ -6,6 +6,8 @@ const Discord = require("discord.js");
 const bot = new Discord.Client({
   intents: [Discord.Intents.FLAGS.GUILDS, Discord.Intents.FLAGS.GUILD_MESSAGES],
 });
+require("dotenv").config();
+const token = `${process.env.DISCORD_TOKEN}`;
 bot.commands = new Discord.Collection();
 const fs = require("fs");
 
@@ -37,4 +39,4 @@ bot.on("messageCreate", (msg) => {
     commandfile.run(bot, msg, args);
   }
 });
-bot.login("OTM2MDI5ODY3MjYxMTc3OTI3.YfHPvg.Gr9n9-yesaK2ff5s9sYv69H_DkU");
+bot.login(token);
