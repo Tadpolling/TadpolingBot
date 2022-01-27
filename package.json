@@ -1,0 +1,22 @@
+{
+  "name": "tadpolingbot",
+  "version": "1.0.0",
+  "description": "Trying out making a Discord bot",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Tadpolling/TadpolingBot.git"
+  },
+  "author": "Tadpoling",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Tadpolling/TadpolingBot/issues"
+  },
+  "homepage": "https://github.com/Tadpolling/TadpolingBot#readme",
+  "dependencies": {
+    "discord.js": "^13.6.0"
+  }
+}
